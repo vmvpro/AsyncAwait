@@ -1,0 +1,46 @@
+﻿<Window x:Class="AsyncAwaitWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" ></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Name="sp1" Grid.Column="0" 
+                    VerticalAlignment="Top" >
+            <Button Name="btnOn" Content="Button" />
+            <Button Name="btnSynchronizationContext" Content="SynchronizationContext" />
+            <Button Name="btnList1" Content="AddListBox" />
+            <Button Name="btnBackroundWorker" Content="BackroundWorker" />
+            <Button Name="btnTaskOn" Content="TaskOn" />
+            <Button Name="btnContinueWith" Content="ContinueWithListBoxAdd" />    
+
+
+            <Label Name="Label1" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <TextBlock>sddsdfsdfssfsdf</TextBlock>
+            </Label>
+            
+
+            <ListBox Name="ListBox1">
+                
+            </ListBox>
+        </StackPanel>
+        <StackPanel Name="sp2" Grid.Column="1" 
+                    VerticalAlignment="Top"  >
+            <Button x:Name ="btnCancel" Content="Button" />
+            <Label Name="Label2" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <TextBlock TextWrapping="Wrap" >sddsdfsdfssfsdf 
+                    sdfsdfsdfsd 9999999999999 sdsdsdfssdfsd</TextBlock>
+                
+            </Label>
+            <Button Name="btnBackroundWorkerCanceled" Content="BackroundWorkerCanceled" />
+            <Button Name="btnTaskOff" Content="TaskOff" />
+
+        </StackPanel>
+        <ProgressBar Name="ProgressBar1" Height="50" Grid.ColumnSpan="2" Margin="0,270,0,0"></ProgressBar>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="AsyncAwaitWPF.wndAsyncAwait"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="wndAsyncAwait" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Column="0">
+            <Button Name="btnTaskOn" Click="btnTaskOn_Click" >btnTaskOn</Button>
+            <Button Name="btnTaskAsyncAwaitOn" Click="btnTaskAsyncAwaitOn_Click" >btnTaskAsyncAwaitOn</Button>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1">
+            <Button Name="btnThreadOff" Click="btnThreadOff_Click" >btnTaskOff</Button>
+            <Button Name="btnTaskAsyncAwaitOff" Click="btnTaskAsyncAwaitOff_Click" >btnTaskAsyncAwaitOff</Button>
+            
+        </StackPanel>
+        <ProgressBar Name="progressBar1" Margin="0,228,0,0" Grid.ColumnSpan="2" >
+
+        </ProgressBar>
+    </Grid>
+</Window>
